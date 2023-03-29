@@ -1,0 +1,7 @@
+body {
+  touch-action: manipulation;
+  user-select: none;
+  overflow-y: hidden;
+  background: linear-gradient(to bottom, #f2cd88, #fff);
+  min-height: 100vh;
+}
