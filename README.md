@@ -1,3 +1,7 @@
+# Preview of the Pokedex
+
+![Pokedex](/images/Preview_AdobeExpress.gif)
+
 # The Pokedex
 
 This is a simple Pokedex app that uses the [PokeAPI](https://pokeapi.co/) to display information about Pokemon. I will be making a functional Pokedex with working buttons and sounds in the future.
