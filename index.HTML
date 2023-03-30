@@ -1,20 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="assets/favicon.ico" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-    <!--this jquery I found on stackoverflow help with ease of use for my
-    javascript code-->
-    <script src="app.js" defer></script>
-    <script src="pokemon.js" defer></script>
+    <script src="pokemon.js"></script>
+    <script src="main.js"></script>
     <title>The Pokedex</title>
   </head>
 
@@ -22,36 +18,34 @@
     <div class="container">
       <div class="pokedex">
         <div class="overallDisplay">
-          <div class="overallDisplayFlexContanier">
+          <div class="overallDisplayFlexContainer">
             <div class="display">
               <div class="displayText">Welcome to the Pokedex</div>
               <div
                 class="displayImage"
-                style="background-image: url('assets/opening.gif')"
+                style="background-image: url('images/opening.gif')"
               ></div>
             </div>
-            <!--Basic Information-->
             <div class="basicInformation">
               <div class="basicInformationTitle">Instructions</div>
               <div class="basicInformationDisplay">
                 <p class="onLoadInfo">Your arrow keys will let you navigate.</p>
                 <p class="onLoadInfo">
-                  Enter key pulls up the selected Pokemon's data.
+                  Enter key pull up the selected Pokemon's data.
                 </p>
                 <p class="onLoadInfo">
-                  The pokeball slider will adjust the volume of sounds.
+                  The pokeball slider will adjust volume of sounds.
                 </p>
                 <p class="onLoadInfo">
-                  The Pokedex buttons are functional as well.
+                  The Pokedex buttons are functional as well!
                 </p>
               </div>
             </div>
-            <!--Doing the stats-->
             <div class="baseStats">
               <div class="baseStatsTitle">Created By:</div>
               <div class="baseStatsDisplay">
                 <p class="onLoadInfo">
-                  This Pokedex was created using the PokeAPI
+                  This pokedex was created using the PokeAPI
                 </p>
                 <br />
                 <p class="onLoadInfo">Developed by Larry Arrington</p>
@@ -67,8 +61,7 @@
               <div class="summaryTitle">Disclaimer</div>
               <div class="summaryDisplay">
                 <p class="onLoadInfo">
-                  All content belongs to is ©Nintendo, Game Freak, and The
-                  Pokémon Company.
+                  All content is ©Nintendo, Game Freak, and The Pokémon Company.
                 </p>
               </div>
             </div>
