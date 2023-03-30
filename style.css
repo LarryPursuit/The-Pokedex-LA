@@ -5,3 +5,346 @@ body {
   background: linear-gradient(to bottom, #f2cd88, #fff);
   min-height: 100vh;
 }
+
+.container {
+  height: 100vh;
+  width: 835vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.pokedex {
+  font-family: "Press Start 2P", cursive;
+  font-size: 80%;
+  background-image: url("assets/pokedex.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  width: 835px;
+  height: 635px;
+  position: relative;
+}
+
+.onLoadInfo {
+  flex-wrap: wrap;
+  margin: 0 auto;
+  font-size: 80%;
+  color: white;
+  line-height: 130%;
+}
+
+.overallDisplay,
+.interact {
+  position: absolute;
+  height: 200px;
+  width: 250px;
+  left: 284px;
+  top: 50px;
+  text-align: center;
+}
+
+.overallDisplay {
+  overflow-y: auto;
+  overflow-x: none;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+}
+
+.overallDisplayFlexContainer {
+  display: flex;
+  width: 100px;
+}
+
+.basicInformation,
+.baseStats,
+.summary,
+.display {
+  height: 200px;
+  width: 250px;
+}
+
+.interact {
+  top: 375px;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow-y: auto;
+  overflow-x: none;
+  overflow: -moz-scrollbars-none;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  cursor: pointer;
+}
+
+.interact::-webkit-scrollbar,
+.overallDisplay::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+.displayText,
+.basicInformationTitle,
+.baseStatsTitle,
+.summaryTitle {
+  margin-top: 10px;
+  padding: 5px 0 5px 0;
+  text-transform: capitalize;
+  color: whitesmoke;
+}
+
+.displayImage {
+    height: 150px;
+    margin: auto 0;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.basicInformationDisplay, .baseStatsDisplay, .summaryDisplay {
+    margin-top: 8px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.basicInformationDisplay > * {
+    margin: 5px 0 5px 0;
+    padding: 3px 0 3px 0;
+    color: white;
+}
+
+/* POKEMON TYPES CSS */
+.typeArea > * {
+    border: 1px solid black;
+    padding: 4px;
+    border-radius: 20px;
+    text-transform: uppercase;
+   }
+   .normal {
+     background-color: #a8a878;
+   }
+   .fighting {
+     background-color: #c03028;
+   }
+   .flying {
+     background-color: #a890f0;
+   }
+   .poison {
+     background-color: #a040a0;
+   }
+   .ground {
+     background-color: #e0c068;
+   }
+   .rock {
+     background-color: #b8a038;
+   }
+   .bug {
+     background-color: #a8b820;
+   }
+   .ghost {
+     background-color: #705898;
+   }
+   .steel {
+     background-color: #b8b8d0;
+   }
+   .fire {
+     background-color: #f08030;
+   }
+   .water {
+     background-color: #6890f0;
+   }
+    .grass {
+     background-color: green;
+   }
+   .electric {
+     background-color: #f8d030;
+   }
+   .psychic {
+     background-color: #f85e8a;
+   }
+   .ice {
+     background-color: #98d8d8;
+   }
+   .dragon {
+     background-color: #743ef8;
+   }
+   .dark {
+     background-color: #705848;
+   }
+   .fairy {
+     background-color: #ff65d5;
+   }
+  
+   /* ABILITIES CSS */
+   .abilitiesTitle {
+     text-decoration: underline;
+   }
+   .abilities {
+     border: 2px solid black;
+     padding: 3px;
+   }
+   .abilities > * {
+     text-transform: capitalize;
+   }
+  
+  
+  /* BASE STATS CSS */
+  .baseStatsTable > * {
+    border: 2px solid magenta;
+    border-radius: 20px;
+    width: 96%;
+    margin-top: 2px;
+    text-align:  left;
+    color: white;
+    background-color: red;
+    padding: 2px;
+  }
+  
+  .summaryInfo {
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 85%;
+    padding: 5px;
+    height: 133px;
+  }
+  
+  
+  /* GENERATED POKEMON SELECTION */
+  
+  .pokemon {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    transition: 300ms;
+    height: 13px;
+  }
+  .pokemon:hover, .currentSelection {
+    transform: scale(1.1);
+    border: 2px solid gold;
+    font-size: 110%;
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+    padding: 2px 0 2px 0;
+  }
+  .pokemonID {
+    width: 12%;
+  }
+  .pokemonName {
+    width: 80%;
+    text-transform: capitalize;
+  }
+  
+  /* BUTTONS */
+  .submit {
+    text-align: center;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    right: 63px;
+    bottom: 130px;
+    border-radius: 100px;
+    background-color: darkgreen;
+    opacity: 0;
+    pointer-events: all;
+    z-index: 10;
+  }
+  .leftButton, .rightButton, .upButton, .downButton {
+    text-align: center;
+    position: absolute;
+    left: 140px;
+    bottom: 155px;
+    width: 40px;
+    height: 22px;
+    background-color: black;
+    opacity: 0;
+    border-radius: 20px;
+    pointer-events: all;
+    z-index: 10;
+  }
+  .leftButton {
+    left: 124px;
+  }
+  .rightButton {
+    left: 185px;
+  }
+  .upButton {
+    transform: rotate3d(0, 0 ,1, 90deg);
+    bottom: 184px;
+    left: 154px;
+  }
+  .downButton {
+    transform: rotate3d(0, 0 ,1, -90deg);
+    bottom: 125px;
+    left: 154px;
+  }
+  
+  .lightUp {
+    width: 18px;
+    height: 8px;
+    border: 2px solid lime;
+    position: absolute;
+    left: 8px;
+    bottom: 168px;
+    box-shadow: inset 0px 0px 40px 40px lime;
+    border-radius: 2px;
+    opacity: 0;
+    animation: lightUpOnDataAccess 500ms infinite;
+  }
+  
+  @keyframes lightUpOnDataAccess {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .soundButton {
+    position: absolute;
+    right: 160px;
+    bottom: 130px;
+    transform: rotateZ(-90deg);
+  }
+  .volumeSlider {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 25px;
+    height: 15px;
+    background-color: lightgrey;
+  }
+  .volumeSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: url('assets/slider.png');
+    background-size: contain;
+    cursor: pointer;
+  }
+  
+  .volumeSlider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+  }
+  
+  /* .phoneView {
+    border: 2px solid pink;
+    height: 580px;
+    width: 330px;
+    position: absolute;
+    z-index: 2;
+    top: 19px;
+    left: 244px;
+  } */
+  
