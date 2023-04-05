@@ -2,7 +2,8 @@ body {
   touch-action: manipulation;
   user-select: none;
   overflow-y: hidden;
-  background: linear-gradient(to bottom, #f2cd88, #fff);
+  background-image: linear-gradient(to bottom, #f2cd88, #fff),
+    url(images/kanto.jpg);
   min-height: 100vh;
 }
 .container {

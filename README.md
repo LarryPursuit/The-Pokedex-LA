@@ -28,3 +28,7 @@ Your arrow keys will let you navigate. Enter key pull up the selected Pokemon's 
 # Now enjoy Trainers go and CATCH EM ALL!
 
 ![Professor](images/professor.jpg)
+
+# Try It Out
+
+[Click here to try it out!](https://larrypursuit.github.io/The-Pokedex-LA/)
